@@ -9,7 +9,7 @@ import java.util.List;
 public class DataHolder {
     private List<Person> mDatas = new ArrayList<>();
 
-    public void initData(List<Person> data) {
+    public void add(List<Person> data) {
         mDatas.addAll(data);
     }
 

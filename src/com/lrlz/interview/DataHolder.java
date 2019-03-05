@@ -25,13 +25,8 @@ public class DataHolder {
 
 class Person {
     private int id;
-    private String name;
 
     int id() {
         return id;
-    }
-
-    public String name() {
-        return name;
     }
 }

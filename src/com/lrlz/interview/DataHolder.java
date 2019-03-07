@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
-* get()方法被经常使用,请问有何问题?如有问题,请重构.
+* 重构该类.
 * */
 public class DataHolder {
     private List<Person> mDatas = new ArrayList<>();

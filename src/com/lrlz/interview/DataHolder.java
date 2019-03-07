@@ -21,6 +21,15 @@ public class DataHolder {
         }
         return null;
     }
+
+    public void remove(int id) {
+        for (Person person : mDatas) {
+            if (person.id() == id) {
+                mDatas.remove(person);
+                break;
+            }
+        }
+    }
 }
 
 class Person {

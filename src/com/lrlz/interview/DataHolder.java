@@ -26,7 +26,6 @@ public class DataHolder {
         for (Person person : mDatas) {
             if (person.id() == id) {
                 mDatas.remove(person);
-                break;
             }
         }
     }

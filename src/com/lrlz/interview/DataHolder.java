@@ -9,10 +9,6 @@ import java.util.List;
 public class DataHolder {
     private List<Person> mDatas = new ArrayList<>();
 
-    public static void main(String[] args){
-
-    }
-
     public void add(List<Person> data) {
         mDatas.addAll(data);
     }

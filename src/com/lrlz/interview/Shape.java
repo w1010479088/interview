@@ -15,6 +15,10 @@ class Circle extends Shape {
     private Circle() {
         LogUtil.log("Circle()");
     }
+
+    public static void main(String[] args) {
+        new Circle();
+    }
 }
 
 class Pencil {

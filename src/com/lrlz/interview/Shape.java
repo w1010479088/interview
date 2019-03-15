@@ -1,30 +1,35 @@
 package com.lrlz.interview;
 
-abstract class Shape {
-
-    abstract void draw();
+class Shape {
+    private Pencil pencil = new Pencil("Shape");
 
     Shape() {
-        LogUtil.log("before Shape()->draw()");
-        draw();
-        LogUtil.log("after Shape()->draw()");
+        LogUtil.log("Shape()");
     }
 }
 
 class Circle extends Shape {
-    private int index = 100;
+    private Pencil pencil = new Pencil("Circle");
+    private static Pen pen = new Pen();
 
-    Circle() {
+    private Circle() {
         LogUtil.log("Circle()");
-        draw();
     }
 
-    @Override
-    void draw() {
-        LogUtil.log("Circle->draw()-->index=" + index);
-    }
 
     public static void main(String[] args) {
         new Circle();
+    }
+}
+
+class Pencil {
+    Pencil(String tag) {
+        LogUtil.log("Pencil()" + tag);
+    }
+}
+
+class Pen {
+    Pen() {
+        LogUtil.log("Pen()");
     }
 }

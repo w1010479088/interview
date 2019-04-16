@@ -7,6 +7,10 @@ import java.util.List;
 * 重构该类.
 * */
 public class DataHolder {
+    public static void main(String[] args){
+
+    }
+
     private List<Person> mDatas = new ArrayList<>();
 
     public void add(List<Person> data) {
